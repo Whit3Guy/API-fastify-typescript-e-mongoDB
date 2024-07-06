@@ -123,6 +123,3 @@ Esta é uma API básica de cadastro desenvolvida com Fastify, TypeScript, MongoD
     - `prisma/`
         - `prisma.ts`: Configuração do cliente Prisma
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
