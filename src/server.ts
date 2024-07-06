@@ -1,8 +1,4 @@
-//Username:WhiteDev
-//Password:XIyIeKNS1xOLaJI1
-
 import fastify from "fastify";
-import fastifyCors from "@fastify/cors";
 import {routes} from './routes'
 import cors from "@fastify/cors"
 
@@ -19,13 +15,15 @@ const start = async () =>{
     await app.register(routes);
 
     try{
+        //com promisse, sobe a aplicação na porta 3301
         await app.listen({port:3301})
         app.log.info(`Subiu na 3301`)
     }
     catch (err){
+        //captura o erro caso aconteça e o exibe
         app.log.error(err)
         process.exit(1)
     }
 }
-
+// inicia a aplicação
 start()
