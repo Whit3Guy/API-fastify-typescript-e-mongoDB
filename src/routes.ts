@@ -3,6 +3,8 @@ import { CreateCustomController } from "./controllers/CreateCustomController";
 import { ListCustomController } from "./controllers/ListCustomController";
 import { DeleteCustomerController } from "./controllers/DeleteCustomerController";
 
+//Sistemas de Rotas
+
 export async function routes(fastify:FastifyInstance, options:FastifyPluginOptions){
 
     fastify.post("/create", (request: FastifyRequest, reply : FastifyReply) => {
